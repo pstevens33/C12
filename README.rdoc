@@ -1,0 +1,40 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+<div class="panel panel-default col-sm-4">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            North Dakota Pitch Deck
+        </h3>
+    </div>
+    <div class="panel-body">
+     <%= link_to image_tag("ND.png", border: 0, width: 325, height: 200), {:controller=>"pages", :action=>'dhsu_pdf'}, :target=>'_blank' %>
+    </div>
+    
+</div>

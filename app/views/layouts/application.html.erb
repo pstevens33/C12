@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <div class="container">
+    <font size="3" color="white">C12</font>
+  </div>  
+  <div class="logo container">
+    <%= link_to image_tag("Logo298x72.jpg"), home_path %>
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3">
+      <font size="6"><%= link_to "EOR Basics", eor_basics_path %></font>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      <font size="6"><%= link_to "Contact", contact_path %></font>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  
+  <div class="container">
+    <hr>
+  </div>
+  
+  
+  
+  <title>C12</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+
+</body>
+<footer>
+  <div class="container">
+    <hr>
+    <p align="right">
+      <font color="blue">© 2016 by C12 Energy, LLC.</font>
+    </p>
+  </div>
+</footer>
+</html>

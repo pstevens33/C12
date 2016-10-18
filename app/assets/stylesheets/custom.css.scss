@@ -1,0 +1,34 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.logo {
+    padding-left: 20px;
+}
+
+.CO2Pic {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+body {
+    background-image: url("whiteBackground.jpg");
+    background-color: #cccccc;
+    background-size: 100%;
+}
+
+body.eor_basics {
+     background-image: url("PureWhite.jpg");
+    background-color: #cccccc;
+    background-size: 100%;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
