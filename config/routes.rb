@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'arkansas_pdf' => "pages#arkansas_pdf"
   get 'eor_basics' => "pages#eor_basics"
   get 'contact' => "pages#contact"
+  get 'maptemp' => "pages#mapTemp"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

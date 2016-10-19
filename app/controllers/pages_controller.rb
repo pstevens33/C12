@@ -7,6 +7,9 @@ class PagesController < ApplicationController
   
   def contact
   end
+  
+  def mapTemp
+  end
 
   
   def kansas_pdf

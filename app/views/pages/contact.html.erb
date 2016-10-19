@@ -1,8 +1,7 @@
 <div class="container">
-  <div class="col-sm-6">
+  <div class="col-sm-12">
     <p align="center">
       <font size="6">
-        <br>
         <font color="blue"><i>Denver Office</i></font><br>
       </font>
       <font size="5">
@@ -12,24 +11,59 @@
       </font>
     </p>
   </div>
-  
-  <div class="col-sm-6">
-    <p align="center">
-      <font size="6">
-        <br>
-        <font color="blue"><i>Kansas Office</i></font><br>
-      </font>
-      <font size="5">
-        <font color="black">555 S. Fossil Street</font><br>
-        <font color="black">Russell, KS 67665</font><br><br>
-      </font>
-    </p>
-  </div>
-  
-  <br><br><br>
+
+
+<div class="container">
+  <div align="center">
+    <!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  <style type="text/css">
+  #map {
+  width: 500px;
+  height: 350px;
+  }
+  </style>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <script type="text/javascript">
+
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+    var center = new google.maps.LatLng(39.754, -104.996);
+    var mapOptions = {
+    zoom: 16,
+    center: center
+    };
+
+    var mapElement = document.getElementById('map');
+
+    var map = new google.maps.Map(mapElement, mapOptions);
+    
+    marker = new google.maps.Marker({
+    position: center,
+    map: map,
+    title: 'ok'
+    });
+
+  }
+  </script>
+  </head>
+<body>
+<div id="map"></div>
+</body>
+</html>
+
+
+  <br>
   <hr>
-  
+
+  </div>
 </div>
+  
+
 
 <div class="container">
   <p align="center">
