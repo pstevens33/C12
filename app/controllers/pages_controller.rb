@@ -13,11 +13,11 @@ class PagesController < ApplicationController
 
   
   def kansas_pdf
-    send_file(Rails.root.join("public", "assets", "Kansas.pdf").to_s, :disposition => "inline", :type => "application/pdf")
+    send_file(Rails.root.join("public", "assets", "C12 Kansas Overview.pdf").to_s, :disposition => "inline", :type => "application/pdf")
   end
   
   def dhsu_pdf
-    send_file(Rails.root.join("public", "assets", "DHSU.pdf").to_s, :disposition => "inline", :type => "application/pdf")
+    send_file(Rails.root.join("public", "assets", "C12 DHSU Overview.pdf").to_s, :disposition => "inline", :type => "application/pdf")
   end
   
   def arkansas_pdf
