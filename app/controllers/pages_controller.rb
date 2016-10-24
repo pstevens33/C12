@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+  
+  def home
+  end
+  
   def show
   end
   
@@ -9,6 +13,12 @@ class PagesController < ApplicationController
   end
   
   def mapTemp
+  end
+  
+  def acquisitions
+  end
+  
+  def arkansas
   end
 
   
@@ -21,7 +31,7 @@ class PagesController < ApplicationController
   end
   
   def arkansas_pdf
-    send_file(Rails.root.join("public", "assets", "Arkansas.pdf").to_s, :disposition => "inline", :type => "application/pdf")
+    send_file(Rails.root.join("public", "assets", "Midway_Presentation.pdf").to_s, :disposition => "inline", :type => "application/pdf")
   end
   
 end
